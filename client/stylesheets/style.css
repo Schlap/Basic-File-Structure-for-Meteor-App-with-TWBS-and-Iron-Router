@@ -1,0 +1,227 @@
+* {
+  font-family: "Futura (Light)";
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-top: 50px;
+}
+
+div.dropdown {
+  margin-top: 30%;
+}
+
+/*navbar styling*/
+.nav.navbar-nav.navbar-right, .nav.navbar.nav {
+  /*font-size: 1.2em;*/
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+  margin-bottom: 0px;
+  background-color: white;
+}
+
+.navbar-nav a#become-a-tutor-button:hover {
+  background-color: #87CEEB;
+}
+
+
+div#dashboard-container {
+  height: 662px;
+}
+
+.profile-placeholder {
+  padding: 16px 20px;
+}
+
+#content-area {
+  position: relative;
+  background: #eeeeee;
+}
+
+.side-nav.col-md-12.col-sm-8.col-xs-12 {
+  background-color: red;
+}
+
+.col-md-9 {
+  width: 75%;
+}
+
+button.navbar-toggle.collapsed:hover {
+  background-color: transparent;
+  outline: none !important;
+}
+
+#dashboard-container {
+  max-width: 970px;
+}
+
+.col-md-3{
+  background-color: yellow;
+}
+
+.header-profile-picture img {
+  width: 33px;
+  height: 33px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+}
+
+input.btn.btn-default {
+  height: 62px;
+  width: 200px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  display: block;
+  background-color: #337ab7;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #252524;
+  color: white;
+}
+
+.footer-note {
+  margin-top: 12px;
+}
+
+#container-hiw {
+  margin-top: 54px;
+  text-align: center;
+  background-image: url("/");
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  overflow: hidden;
+}
+
+.navbar-nav > li > a {
+  color: #337ab7 !important;
+  margin-top: 2.5px;
+}
+
+div.container-fluid {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.input-group-addon {
+  background-color: white;
+  border-radius: 2px;
+  height: 36px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+#become-a-tutor-button {
+  margin-top: 10px;
+  border-width: 0px;
+  border-radius: 2px;
+  padding: 8px 38px;
+  color: white;
+  width: 229px;
+  background-color: #337ab7
+}
+
+#how-it-works-button, #find-a-tutor-button {
+  display: block;
+  width: 180px;
+  border-width: 0px;
+  border-radius: 2px;
+  padding: 9px 39px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5%;
+  background-color: #337ab7;
+  color: white;
+}
+
+input.form-control {
+  border-width: 2px;
+  border-radius: 2px;
+  height: 36px;
+  /*width: 285px;*/
+}
+
+.home-text {
+  text-align: center;
+  margin-top: 22.5%;
+  color: white !important;
+
+}
+
+.home-main-text, .home-subtext {
+  text-shadow: 1px 1px #000
+}
+
+section.one-index {
+  background-image: url("/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  overflow: hidden;
+  /*margin-top: 50px;*/
+}
+
+h1.index-section-two-header {
+  text-align: center;
+}
+
+#row-two {
+  text-align: center;
+}
+
+.modal-title {
+  text-align: center;
+}
+
+#account-type-container {
+  margin-top: 20%;
+}
+
+/*media queries */
+@media only screen and (max-width: 650px) {
+    section.one-index {
+        height: 365px;
+    }
+}
+
+@media only screen and (max-width: 1074px) {
+  nav.navbar.navbar-default.navbar-fixed-top {
+    font-size: 0.90em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1105px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}

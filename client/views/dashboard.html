@@ -1,0 +1,65 @@
+<template name="dashboard">
+<div id="content-area">
+  <div class="container" id="dashboard-container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="side-area">
+          <div class="row">
+
+            <div class="col-md-12 col-sm-4 col-xs-12">
+              <div class="profile-placeholder clearfix">
+
+                <div class="profile-imgholder">
+                  <img src="">
+                </div>
+
+                <div class="hidden-xs">
+                  <h6>Hey {{ userFirstName }}!</h6>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="side-nav col-md-12 col-sm-8 col-xs-12">
+              <div class="hidden-xs hidden-sm">
+                <div class="complete-profile-space">
+                  <h1>Side Menu</h1>
+                </div>
+              </div>
+
+              <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                  <ul>
+                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/inbox">Inbox</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">My Profile</a></li>
+                  </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-9 right-area">
+        {{ >yield region="inbox"}}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- {{ #if currentUser }}
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-4">
+          <h1>Welcome, {{ currentUser.username }}!</h1>
+        </div>
+      </div>
+    </div>
+    {{ /if}} -->
+
+
+
+</template>
