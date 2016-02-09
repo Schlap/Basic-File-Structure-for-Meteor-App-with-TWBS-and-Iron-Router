@@ -30,9 +30,9 @@
               <div class="navbar-collapse collapse sidebar-navbar-collapse">
                   <ul>
                     <li><a href="/dashboard">Dashboard</a></li>
-                    <li><a href="/inbox">Inbox</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">My Profile</a></li>
+                    <li><a href="/inbox" class="inbox-link">Inbox</a></li>
+                    <li><a href="/account">Account</a></li>
+                    <li><a href="/my-profile">My Profile</a></li>
                   </ul>
               </div>
 
@@ -43,7 +43,7 @@
       </div>
 
       <div class="col-md-9 right-area">
-        {{ >yield region="inbox"}}
+        {{ >yield region="aside"}}
       </div>
 
     </div>

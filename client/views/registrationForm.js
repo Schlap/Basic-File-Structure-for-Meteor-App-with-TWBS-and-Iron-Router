@@ -7,7 +7,7 @@ Template.register.events({
     console.log("Form submitted.");
     Accounts.createUser({
     //  change username to profile name
-     profile: nameVar,
+     profile: {name: nameVar, accountType: 'student'},
      email: emailVar,
      password: passwordVar
     });
