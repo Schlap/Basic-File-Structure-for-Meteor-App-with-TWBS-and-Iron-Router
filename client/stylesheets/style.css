@@ -17,6 +17,10 @@ div.dropdown {
   margin-top: 30%;
 }
 
+#side-nav {
+  background-color: black;
+}
+
 /*navbar styling*/
 .nav.navbar-nav.navbar-right, .nav.navbar.nav {
   /*font-size: 1.2em;*/

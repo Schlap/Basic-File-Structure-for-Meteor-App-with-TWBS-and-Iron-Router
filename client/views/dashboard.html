@@ -31,10 +31,18 @@
                   <ul>
                     <li><a href="/dashboard">Dashboard</a></li>
                     <li><a href="/inbox" class="inbox-link">Inbox</a></li>
-                    <li><a href="/account">Account</a></li>
+                    {{ #if isTutor }}
+                      <li><a href="/tutor-account">Account</a></li>
+                    {{ else }}
+                      <li><a href="/student-account">Account</a></li>
+                    {{ /if }}
                     <li><a href="/my-profile">My Profile</a></li>
                   </ul>
               </div>
+
+              <div class="navbar-collapse collapse sidebar-navbar-collapse" id="side-nav">
+              </div>
+
 
             </div>
 
@@ -49,17 +57,5 @@
     </div>
   </div>
 </div>
-
-  <!-- {{ #if currentUser }}
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-4">
-          <h1>Welcome, {{ currentUser.username }}!</h1>
-        </div>
-      </div>
-    </div>
-    {{ /if}} -->
-
-
 
 </template>
