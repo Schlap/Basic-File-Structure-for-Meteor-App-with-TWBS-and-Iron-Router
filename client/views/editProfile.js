@@ -1,4 +1,4 @@
-Template.myProfile.events({
+Template.editProfile.events({
   'submit .form-group': function (event) {
     event.preventDefault();
     var firstName = event.target.firstName.value;

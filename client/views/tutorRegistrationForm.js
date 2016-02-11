@@ -21,6 +21,6 @@ Template.tutorRegistrationForm.events({
     });
 
     // Currently re-routes regardless if registration is successful or not. FIX!
-    Router.go('/dashboard')
+    Router.go('/edit-profile')
   }
 });

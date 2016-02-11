@@ -22,7 +22,7 @@ Template.studentRegistrationForm.events({
 
     });
      // redirect to dashboard after registration
-    Router.go('/my-profile')
+    Router.go('/edit-profile')
 
 
 

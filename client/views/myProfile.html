@@ -1,16 +1,9 @@
 <template name="myProfile">
-  <h1>Edit Profile</h1>
-  <form class="form-group">
-    <label>First Name:</label>
-    <input type="text" name="firstName" class="form-control">
-    <label>Last Name:</label>
-    <input type="text" name="lastName" class="form-control">
-    <!-- <label>Where Do You Live?</label>
-    <input type="text" name="text" class="form-control"> -->
-    <label>Tell us more about yourself...</label>
-    <input type="text" name="bio" class="form-control">
-    <label>Profile Picture: </label>
-    <div class="fileupload fileupload-exists" data-provides="fileupload"></div>
-    <input type="submit" vallue="Save Changes" class="">
-  </form>
+  <div class="container">
+    <div class="row">
+      <h1>User Profile Page</h1>
+      <p>{{ userFirstName }} {{ userlastName }}</p>
+      <p>{{ userBio }}</p>
+    </div>
+  </div>
 </template>

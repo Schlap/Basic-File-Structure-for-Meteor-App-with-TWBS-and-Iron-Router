@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="hidden-xs">
-                  <h6>Hey {{ userFirstName }}!</h6>
+                  <h6>Hey <a href="/my-profile">{{ userFirstName }}</a>!</h6>
                 </div>
 
               </div>
@@ -29,7 +29,7 @@
 
               <div class="navbar-collapse collapse sidebar-navbar-collapse">
                   <ul>
-                    <li><a href="/my-profile">My Profile</a></li>
+                    <li><a href="/edit-profile">My Profile</a></li>
                     <!-- <li><a href="/dashboard">Dashboard</a></li> -->
                     <li><a href="/inbox" class="inbox-link">Inbox</a></li>
                     {{ #if isTutor }}
