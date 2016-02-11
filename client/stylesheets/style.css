@@ -78,6 +78,11 @@ button.navbar-toggle.collapsed:hover {
   border-radius: 19px;
 }
 
+.search-area {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+/*
 input.btn.btn-default {
   height: 62px;
   width: 200px;
@@ -89,7 +94,7 @@ input.btn.btn-default {
   border-radius: 4px;
   display: block;
   background-color: #337ab7;
-}
+}*/
 
 .footer {
   position: absolute;

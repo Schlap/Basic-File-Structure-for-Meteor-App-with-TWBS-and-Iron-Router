@@ -29,14 +29,19 @@
 
               <div class="navbar-collapse collapse sidebar-navbar-collapse">
                   <ul>
-                    <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/my-profile">My Profile</a></li>
+                    <!-- <li><a href="/dashboard">Dashboard</a></li> -->
                     <li><a href="/inbox" class="inbox-link">Inbox</a></li>
                     {{ #if isTutor }}
+                      <li><a href="#">Find Jobs</a></li>
                       <li><a href="/tutor-account">Account</a></li>
+                      <li><a href="#">My Subjects</a></li>
                     {{ else }}
+                      <li><a href="/tutors-list">Find Tutors</a></li>
                       <li><a href="/student-account">Account</a></li>
                     {{ /if }}
-                    <li><a href="/my-profile">My Profile</a></li>
+
+                    <li><a href="#">My Reviews</a></li>
                   </ul>
               </div>
 

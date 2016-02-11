@@ -3,7 +3,11 @@ Template.login.events({
       event.preventDefault();
       var emailVar = event.target.loginEmail.value;
       var passwordVar = event.target.loginPassword.value;
-      Meteor.loginWithPassword(emailVar, passwordVar);
-      Router.go('/dashboard');
+      if(Meteor.loginWithPassword(emailVar, passwordVar)) {
+        Router.go('/dashboard');
+      } else {
+        alert("Email incorrect");
+      }
+
   }
 });
