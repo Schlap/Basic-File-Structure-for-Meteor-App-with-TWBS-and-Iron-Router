@@ -11,5 +11,13 @@
         <input type="text" name="text" class="form-control" placeholder="Search for a Tutor">
       </form>
     </div>
+
+    <div class="row">
+      {{ #each tutors }}
+      {{ >tutor }}
+        <!-- <li><a href="#">{{ profile.firstName }} {{ profile.lastName }} || {{ emails.[0].address }}</a> || {{ profile.accountType }}</li> -->
+      {{ /each}}
+    </div>
+
   </div>
 </template>

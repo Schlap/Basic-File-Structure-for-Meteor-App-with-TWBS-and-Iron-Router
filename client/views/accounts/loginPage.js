@@ -1,13 +1,14 @@
-Template.login.events({
+Template.loginPage.events({
   'submit .form-group': function(event){
       event.preventDefault();
       var emailVar = event.target.loginEmail.value;
       var passwordVar = event.target.loginPassword.value;
-      if(Meteor.loginWithPassword(emailVar, passwordVar)) {
+      Meteor.loginWithPassword(emailVar, passwordVar, function (err) {
+        if (err) {
+          alert(err);
+          return;
+        }
         Router.go('/dashboard');
-      } else {
-        alert("Email incorrect");
-      }
-
+      });
   }
 });
