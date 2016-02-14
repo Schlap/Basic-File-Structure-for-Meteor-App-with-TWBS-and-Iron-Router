@@ -5,10 +5,14 @@
     <input type="text" name="firstName" class="form-control" value="{{ userFirstName }}">
     <label>Last Name:</label>
     <input type="text" name="lastName" class="form-control" value="{{ userlastName }}">
-    <!-- <label>Email:</label>
-    <input type="text" name="email" class="form-control" value="{{ userEmail }}"> -->
-    <!-- <label>Where Do You Live?</label>
-    <input type="text" name="text" class="form-control"> -->
+    {{ #if isTutor }}
+      <label>Education:</label>
+      <input type="text" name="education" class="form-control" value="">
+      <label>Preferred subjects</label>
+      <input type="text" name="preferredSubjects" class="form-control">
+      <label>Hobbies</label>
+      <input type="text" name="hobbies" class="form-control">
+    {{ /if }}
     <label>Tell us more about yourself...</label>
     <input type="text" name="bio" class="form-control" value="{{ userBio }}">
     <label>Profile Picture: </label>

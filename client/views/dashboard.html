@@ -14,7 +14,7 @@
                 </div>
 
                 <div class="hidden-xs">
-                  <h6>Hey <a href="/my-profile">{{ userFirstName }}</a>!</h6>
+                  <h6>Hey <a href="{{ pathFor 'myProfile'}}">{{ userFirstName }}</a>!</h6>
                 </div>
 
               </div>
@@ -35,7 +35,7 @@
                     {{ #if isTutor }}
                       <li><a href="#">Find Jobs</a></li>
                       <li><a href="/tutor-account">Account</a></li>
-                      <li><a href="#">My Subjects</a></li>
+                      <li><a href="{{ pathFor 'mySubjects' }}">My Subjects</a></li>
                     {{ else }}
                       <li><a href="/tutors-list">Find Tutors</a></li>
                       <li><a href="/student-account">Account</a></li>

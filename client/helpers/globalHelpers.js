@@ -13,3 +13,9 @@ Template.registerHelper('userEmail', function (){
 Template.registerHelper('userBio', function () {
   return Meteor.user().profile.bio;
 });
+
+Template.registerHelper('isTutor', function () {
+  if(Meteor.user().profile.accountType == 'tutor') {
+    return true;
+  }
+});

@@ -1,0 +1,27 @@
+<template name="subjectsList">
+  <div class="container">
+    <div class="row">
+      <h1>Subjects List</h1>
+
+
+        <div class="col-md-4 col-sm-4">
+          <h3><a href="{{ pathFor 'category' }}">Mathematics</a></h3>
+          <ul>
+            <a href="{{ pathFor 'subject' }}">Calculus</a>
+          </ul>
+        </div>
+
+
+      <!-- <li>English</li>
+      <li>Sciences</li>
+      <li>Arts</li>
+      <li>Engineering</li>
+      <li>History</li>
+      <li>Language</li> -->
+
+        {{ #each subjects }}
+          <p>{{ subject }}</p>
+        {{ /each }}
+    </div>
+  </div>
+</template>

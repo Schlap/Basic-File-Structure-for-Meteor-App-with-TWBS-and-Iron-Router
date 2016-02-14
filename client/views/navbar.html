@@ -28,8 +28,8 @@
           </form>
 
           <ul class="nav navbar-nav">
-            <li class=""><a href="#">BROWSE</a></li>
-            <li><a href="/how-it-works">HOW IT WORKS</a></li>
+            <li class=""><a href="{{ pathFor 'tutorsList' }}">BROWSE</a></li>
+            <li><a href="{{ pathFor 'howItWorks' }}">HOW IT WORKS</a></li>
           </ul>
 
 
@@ -39,24 +39,24 @@
 
                 {{ #if currentUser }}
                   <li class="subjects-link"><a href="#">Subjects</a></li>
-                  <li class="dashboard-link"><a href="/dashboard">Dashboard</a></li>
-                  <li class="inbox-link"><a href="/inbox">Inbox</a></li>
+                  <li class="dashboard-link"><a href="{{ pathFor 'dashboard'}}">Dashboard</a></li>
+                  <li class="inbox-link"><a href="{{ pathFor 'inbox'}}">Inbox</a></li>
                   <li><div class="dropdown">
                     <a href="" class="header-profile-picture" id="dropdownMenu" data-toggle="dropdown">
-                      <img alt class="hidden-xs" src="profile-img.jpeg">
+                      <img alt class="hidden-xs" src="/profile-img.jpeg">
                     </a>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                       <li><a href="#">Account</a></li>
                       <li><a href="#">View Profile</a></li>
-                      <li><a href="/edit-profile">Edit Profile</a></li>
+                      <li><a href="{{ pathFor 'editProfile' }}">Edit Profile</a></li>
                       <li><a href="#">My Reviews</a></li>
                       <li><a>{{ >logout }}</a></li>
                     </ul>
                   </div></li>
                 {{ else }}
-                  <li class="register-link"><a href="/account-type">REGISTER</a></li>
+                  <li class="register-link"><a href="{{ pathFor 'accountType'}}">REGISTER</a></li>
                   <li class="login-link"><a href="#">LOGIN</a></li>
-                  <a class="btn btn-default" id="become-a-tutor-button" href="/tutor-registration-form" role="button">BECOME A TUTOR</a>
+                  <a class="btn btn-default" id="become-a-tutor-button" href="{{ pathFor 'tutorRegistrationForm'}}" role="button">BECOME A TUTOR</a>
                 {{ /if}}
 
               </ul>

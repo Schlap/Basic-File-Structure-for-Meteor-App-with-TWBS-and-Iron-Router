@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="">
-        <div class=""><a href="#">{{ profile.firstName }} {{ profile.lastName }}</a> || {{ emails.[0].address }} || <a href="#">Send {{ profile.firstName }} a message</a></div>
+        <div class=""><a href="{{ pathFor 'userProfile'}}">{{ profile.firstName }} {{ profile.lastName }}</a> || {{ emails.[0].address }} || <a href="#">Send {{ profile.firstName }} a message</a></div>
         <div class=""></div>
       </div>
     </div>

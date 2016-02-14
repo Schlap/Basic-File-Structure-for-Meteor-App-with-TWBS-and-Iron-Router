@@ -234,3 +234,22 @@ h1.index-section-two-header {
         float:none;
     }
 }
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 650px) {
+  span.home-subtext, span.home-main-text {
+    font-size: 0.55em;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 650px) and (max-width: 900px) {
+  span.home-subtext, span.home-main-text {
+    font-size: 0.75em;
+  }
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+}
